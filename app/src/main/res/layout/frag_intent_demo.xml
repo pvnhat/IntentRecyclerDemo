@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_send_string"
+        android:text="Send String"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_send_num"
+        android:text="Send Number"
+        android:layout_below="@+id/btn_send_string"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_send_array"
+        android:text="Send Array"
+        android:layout_toRightOf="@+id/btn_send_num"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_send_object"
+        android:text="Send object"
+        android:layout_below="@+id/btn_send_string"
+        android:layout_toRightOf="@+id/btn_send_num"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_send_bundle"
+        android:text="Send Bundle"
+        android:layout_toRightOf="@+id/btn_send_array"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/edit_data"
+        android:layout_below="@+id/btn_send_object"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#f000"
+        android:layout_below="@+id/edit_data"
+        android:layout_marginTop="15dp"
+        android:id="@+id/view_line"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit String"
+        android:id="@+id/btn_edit"
+        android:layout_below="@+id/view_line"/>
+
+</RelativeLayout>
